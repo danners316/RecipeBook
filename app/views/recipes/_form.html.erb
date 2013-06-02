@@ -1,0 +1,37 @@
+<%= form_for :recipe, :html => { :multipart => true } do |f| %>
+    <p>
+    <%= f.label :recipe_name %><br />
+    <%= f.text_field :recipe_name %>
+  </p>
+
+    <%= f.hidden_field :name, :value => "#{current_user.name}" %>
+    <%= f.hidden_field :user_id, :value => "#{current_user.id}" %>
+
+  <p>
+    <%= f.label :method_1 %><br />
+    <%= f.text_area :method_1 %>
+  </p>
+  <p>
+    <%= f.label :method_2 %><br />
+    <%= f.text_area :method_2 %>
+  </p>
+  <p>
+    <%= f.label :method_3 %><br />
+    <%= f.text_area :method_3 %>
+  </p>
+  <p>
+    <%= f.label :method_4 %><br />
+    <%= f.text_area :method_4 %>
+  </p>
+  <p>
+    <%= f.label :method_5 %><br />
+    <%= f.text_area :method_5 %>
+  </p>
+  <p>
+    <%= f.label :ingredients %><br />
+    <%= f.text_area :ingredients %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

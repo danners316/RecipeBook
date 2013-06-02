@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  recipe_name: MyString
+  user_id: 1
+  name: MyString
+  method_1: MyText
+  method_2: MyText
+  method_3: MyText
+  method_4: MyText
+  method_5: MyText
+  ingredients: MyText
+
+two:
+  recipe_name: MyString
+  user_id: 1
+  name: MyString
+  method_1: MyText
+  method_2: MyText
+  method_3: MyText
+  method_4: MyText
+  method_5: MyText
+  ingredients: MyText

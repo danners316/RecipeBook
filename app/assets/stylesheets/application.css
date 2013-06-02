@@ -1,0 +1,102 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+#wrapper{width:960px;
+margin-right: auto;
+margin-left: auto;
+font-family: "earth's mightiest bold";
+    letter-spacing: 0.1em;
+font-size: 26px;}
+#bar{background-color:#B53560;
+height:auto;
+padding:20px;}
+
+#bar span{
+font-family: "arbuckle remix nf" !important;
+color:white;
+font-size: 1.5em;
+padding-top:10px;  }
+
+#bar a{
+    color:white;
+    float:right;
+margin-left:5px;
+text-decoration: none;}
+
+#bar a:hover{text-decoration: underline;
+background-color:#B53560}
+
+#notice{margin-top:0;
+float:right;
+border-left:2px solid #B53560;
+border-right:2px solid #B53560;
+border-bottom:2px solid #B53560;
+color:#B53560 !important;
+padding:5px;}
+
+#title{
+    margin-top:10px;
+    color:#B53560;
+    padding:2px;
+    margin-top: 10px;
+}
+
+ul{list-style-type: none;
+float:left;
+clear:left}
+ul li{margin:0 0 5px 0;
+max-width: 500px;
+}
+#ingredients{float:right;
+    width:600px;
+padding:5px;
+margin-bottom:10px;
+text-align: right;}
+
+#ingredients h4{margin-top:0;
+text-align: right;
+text-decoration: underline}
+
+.cl{clear:left}
+.fr{float:right}
+.fl{float:left}
+.flcl{float:left;clear:left:}
+
+#nav{position:fixed;
+top:10px;
+left:10px;}
+
+dt{background-color:#B53560;
+color:white;
+    border-top:1px solid #CCC;
+    border-right:2px solid #CCC;
+    border-bottom:2px solid #CCC;
+    border-left:1px solid #CCC;
+    border-radius:4px 4px 4px 4px;
+width:60px;
+margin-bottom:2px;}
+
+dd{    border-top:1px solid #B53560;
+    border-right:2px solid #B53560;
+    border-bottom:2px solid #B53560;
+    border-left:1px solid #B53560;
+    border-radius:4px 4px 4px 4px;
+padding:2px;
+margin-bottom:10px;
+margin-left: 2px;}
+
+#nav a:hover{color:#B53560;
+background-color: white;
+text-decoration: underline}
+
+#nav a{margin-bottom:5px;}

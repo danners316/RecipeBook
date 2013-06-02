@@ -1,0 +1,12 @@
+<% if @recipes.any? %>
+<h4>Recipe Count: <%= @recipes.count %></h4>
+<% @recipes.each do |recipe| %>
+<h3><%= link_to recipe.recipe_name, recipe %></h3>
+<% end %>
+
+<% else %>
+<h3><%= current_user.name %>, You don't have any recipes!</h3>
+    <p>Add one <%= link_to 'here', new_recipe_path %></p>
+<% end %>
+
+
