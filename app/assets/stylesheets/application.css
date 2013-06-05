@@ -11,6 +11,29 @@
  *= require_self
  *= require_tree .
  */
+@font-face {
+    font-family: "Earth's Mightiest Bold";
+    src: url('eartmb-webfont.eot');
+    src: url('eartmb-webfont.eot?#iefix') format('embedded-opentype'),
+    url('eartmb-webfont.woff') format('woff'),
+    url('eartmb-webfont.ttf') format('truetype'),
+    url("eartmb-webfont.svg#Earth's Mightiest Bold") format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "arbuckle remix nf";
+    src: url('arbuckleremixnf-webfont.eot');
+    src: url('arbuckleremixnf-webfont.eot?#iefix') format('embedded-opentype'),
+    url('arbuckleremixnf-webfont.woff') format('woff'),
+    url('arbuckleremixnf-webfont.ttf') format('truetype'),
+    url("arbuckleremixnf-webfont.svg#arbuckle remix nf") format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 #wrapper{width:960px;
 margin-right: auto;
 margin-left: auto;
