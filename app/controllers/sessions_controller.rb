@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
   def create
-    @title = "Login"
+    @title = "Enter Username and Password to Login"
     @user = User.new(params[:user])
     user = User.find_by_name_and_password(params[:name], params[:password])
     if user
