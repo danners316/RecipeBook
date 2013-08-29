@@ -100,7 +100,7 @@ margin-bottom: 10px;}
 
 .cl{clear:left}
 .fr{float:right}
-.fl{float:left}
+.fl{float:left !important;}
 .flcl{float:left;clear:left;}
 
 #nav{position:fixed;

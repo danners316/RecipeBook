@@ -2,6 +2,7 @@ class RecipesController < ApplicationController
   # GET /recipes
   # GET /recipes.json
   def index
+    @title = "Welcome"
     @recipes = Recipe.all
 
     respond_to do |format|

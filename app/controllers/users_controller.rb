@@ -19,10 +19,6 @@ class UsersController < ApplicationController
 
   end
 
-  def welcome
-    @title = "Welcome"
-  end
-
   # GET /users/new
   # GET /users/new.json
   def new
