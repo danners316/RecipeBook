@@ -4,6 +4,7 @@ class RecipesController < ApplicationController
   def index
     @title = "Welcome"
     @recipes = Recipe.all
+    @user = User.new
 
     respond_to do |format|
       format.html # index.html.erb
@@ -39,6 +40,8 @@ class RecipesController < ApplicationController
 
   # GET /recipes/1/edit
   def edit
+    @title = "Edit Your Recipe"
+
     @recipe = Recipe.find(params[:id])
   end
 
@@ -63,10 +66,10 @@ class RecipesController < ApplicationController
     respond_to do |format|
       if @recipe.update_attributes(params[:recipe])
         format.html { redirect_to @recipe, notice: 'Recipe was successfully updated.' }
-        format.json { head :no_content }
+
       else
         format.html { render action: "edit" }
-        format.json { render json: @recipe.errors, status: :unprocessable_entity }
+
       end
     end
   end

@@ -1,5 +1,12 @@
-<div class="cl">
-  <%= @recipes.each do |recipe| %>
-    <%= image_tag recipe.attachment.url, :class => 'img_front' %>
+<div class="flcl">
+  <h2>Latest Recipes ....</h2>
+  <ul>
+  <% @recipes.each do |recipe| %>
+    <li><%=  image_tag recipe.attachment.url, :class => 'img_front' %> </li>
+        <li><%= link_to truncate(recipe.recipe_name, :length => 30 ), recipe %> </li>
 <% end %>
+  </ul>
 </div>
+
+<div id="register"><%= render 'users/form' %></div>
+<div id="login"><%= render 'sessions/form' %></div>

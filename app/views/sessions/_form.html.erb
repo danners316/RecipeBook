@@ -1,12 +1,13 @@
-<div id="login">
+
 <%= form_tag sessions_path do %>
-    <p>
-      <h3>Login - Username & Password </h3>
-      <%= text_field_tag :name %>
 
-      <%= password_field_tag :password %>
+      <h3>Login </h3>
+      <%= label_tag :name %><br />
+      <%= text_field_tag :name %> <br />
 
-      <%= submit_tag 'Login' %>
-    </p>
+      <%= label_tag :password %><br />
+      <%= password_field_tag :password %><br />
+
+    <%= image_submit_tag("link.gif")%>
+
 <% end %>
-</div>

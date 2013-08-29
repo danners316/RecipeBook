@@ -1,12 +1,19 @@
 <% if @recipes.any? %>
-<h4>Recipe Count: <%= @recipes.count %></h4>
-<% @recipes.each do |recipe| %>
-<h3><%= link_to recipe.recipe_name, recipe %></h3>
-<% end %>
 
+    <div class="flcl">
+      <h2>Your Recipe Count: <%= @recipes.count %></h2>
+      <ul>
+        <% @recipes.each do |recipe| %>
+            <li><%=  image_tag recipe.attachment.url, :class => 'img_front' %> </li>
+            <li><%= link_to truncate(recipe.recipe_name, :length => 30 ), recipe %> </li>
+        <% end %>
 <% else %>
-<h3><%= current_user.name %>, You don't have any recipes!</h3>
+    <h2><%= current_user.name %>, You don't have any recipes!</h2>
     <p>Add one <%= link_to 'here', new_recipe_path %></p>
 <% end %>
+      </ul>
+    </div>
+
+
 
 

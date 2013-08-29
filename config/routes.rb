@@ -1,7 +1,10 @@
 Book::Application.routes.draw do
 
+
   post "recipes/new"
+  get "recipes/edit"
   resources :recipes
+
 
   get "users/welcome"
   resources :users

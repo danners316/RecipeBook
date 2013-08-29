@@ -13,3 +13,18 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+$(document).ready(function() {
+$("#login").hide();
+$("#register").hide();
+});
+var show_login = (function()
+{
+    $("#register").animate({width:'hide'},350);
+    $("#login").delay(700).animate({width:'show'},350);
+});
+
+var show_register = (function()
+{
+    $("#login").animate({width:'hide'},350);
+    $("#register").delay(700).animate({width:'show'},350);
+});
