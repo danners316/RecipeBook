@@ -75,7 +75,8 @@ text-align:center;}
 
 ul{list-style-type: none;
 float:left;
-clear:left}
+clear:left;}
+
 ul li{margin:0 0 5px 0;
 max-width: 500px;
 }
@@ -100,7 +101,7 @@ margin-bottom: 10px;}
 .cl{clear:left}
 .fr{float:right}
 .fl{float:left}
-.flcl{float:left;clear:left:}
+.flcl{float:left;clear:left;}
 
 #nav{position:fixed;
 top:10px;
