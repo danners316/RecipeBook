@@ -7,7 +7,13 @@
     <%= f.hidden_field :name, :value => "#{current_user.name}" %>
     <%= f.hidden_field :user_id, :value => "#{current_user.id}" %>
 
-  <p>
+    <p>
+      <%= f.label :ingredients %><br />
+      <%= f.text_area :ingredients %>
+    </p>
+
+
+    <p>
     <%= f.label :method_1 %><br />
     <%= f.text_area :method_1 %>
   </p>
@@ -27,10 +33,11 @@
     <%= f.label :method_5 %><br />
     <%= f.text_area :method_5 %>
   </p>
-  <p>
-    <%= f.label :ingredients %><br />
-    <%= f.text_area :ingredients %>
-  </p>
+
+    <p>
+      <%= f.label :attachment, 'Image Upload' %><br />
+      <%= f.file_field :attachment %>
+    </p>
   <p>
     <%= f.submit %>
   </p>

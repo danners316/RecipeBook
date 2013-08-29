@@ -10,28 +10,35 @@
 <div id="wrapper">
 <div id="bar">
   <% unless current_user %>
-      <%= link_to "Register", new_user_path %>
+      <%= link_to image_tag('register.gif'), new_user_path %>
+      <%= link_to image_tag('login.gif'), login_path %>
+
   <% end %>
+  <%= link_to image_tag('blog.gif'), "http://mews.herokuapp.com" %>
+  <%= link_to image_tag('forum.gif'), "http://elephant-talk.herokuapp.com" %>
   <% if current_user %>
-  <%= link_to "Logout", logout_path %>
-  <% end %>    
-  <span>RecipeBook</span>
+      <%= link_to image_tag('home.gif'), current_user %>
+      <%= link_to image_tag('recipe.gif'), new_recipe_path %>
+      <%= link_to image_tag('logout.gif'), logout_path %>
+
+
+
+  <% end %>
+  <%= image_tag "logo.gif" %>
 
 </div>
+  <div id="title">
+  <% if @title %>
+      <%= @title %>
+        <hr />
+  <% end %>
+  </div>
 <% if notice %>
 <div id="notice"><%= notice %></div>
 <% end %>
 
 <div class="cl">
-  <% if @title %>
-      <h1 id="title"><%= @title %></h1>
-  <% end %>
-  <div id="nav">
-    <% if current_user %>
-    <%= link_to 'Home', current_user %><br />
-    <%= link_to 'New Recipe', new_recipe_path %>
-        <% end %>
-  </div>
+
   <%= yield %>
   
   

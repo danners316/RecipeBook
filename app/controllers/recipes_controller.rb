@@ -25,6 +25,7 @@ class RecipesController < ApplicationController
   # GET /recipes/new
   # GET /recipes/new.json
   def new
+    @title = "New Recipe"
     @recipe = current_user.recipes.build(params[:recipe])
     if request.post?
       if @recipe.save

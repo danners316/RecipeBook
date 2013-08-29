@@ -11,87 +11,56 @@
  *= require_self
  *= require_tree .
  */
-@font-face {
-    font-family: "Earth's Mightiest Bold";
-    src: url('eartmb-webfont.eot');
-    src: url('eartmb-webfont.eot?#iefix') format('embedded-opentype'),
-    url('eartmb-webfont.woff') format('woff'),
-    url('eartmb-webfont.ttf') format('truetype'),
-    url("eartmb-webfont.svg#Earth's Mightiest Bold") format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 
-@font-face {
-    font-family: "arbuckle remix nf";
-    src: url('arbuckleremixnf-webfont.eot');
-    src: url('arbuckleremixnf-webfont.eot?#iefix') format('embedded-opentype'),
-    url('arbuckleremixnf-webfont.woff') format('woff'),
-    url('arbuckleremixnf-webfont.ttf') format('truetype'),
-    url("arbuckleremixnf-webfont.svg#arbuckle remix nf") format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Glametrix";
-    src: url('glametrixlight-webfont.eot');
-    src: url('glametrixlight-webfont.eot?#iefix') format('embedded-opentype'),
-    url('glametrixlight-webfont.woff') format('woff'),
-    url('glametrixlight-webfont.ttf') format('truetype'),
-    url("glametrixlight-webfont.svg#Glametrix") format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-#wrapper{width:960px;
+#wrapper{width:1060px;
 margin-right: auto;
 margin-left: auto;
-font-family: "earth's mightiest bold";
+font-family: "courier new";
     letter-spacing: 0.1em;
-font-size: 22px;}
-#bar{background-color:#B53560;
+font-size: 12px;}
+#bar{
 height:auto;
-padding:20px;}
-
-.font{font-family: "Glametrix";
-font-size:22px;
-letter-spacing: 0em !important;}
+    padding-bottom: 10px;
+    border-bottom:1px solid black;}
 
 #login{border:1px solid #B53560;
 padding:2px;
 border-radius: 5px;}
 
 #bar span{
-font-family: "arbuckle remix nf" !important;
 color:white;
-font-size: 1.5em;
-padding-top:10px;  }
+
+padding-top:10px;
+}
 
 #bar a{
-    color:white;
     float:right;
-margin-left:5px;
+margin:10px 0 0 10px;
 text-decoration: none;}
 
 #bar a:hover{text-decoration: underline;
-background-color:#B53560}
+}
 
 #notice{margin-top:0;
 float:right;
-border-left:2px solid #B53560;
-border-right:2px solid #B53560;
-border-bottom:2px solid #B53560;
 color:#B53560 !important;
 padding:5px;}
 
 #title{
-    margin-top:10px;
-    color:#B53560;
-    padding:2px;
-    margin-top: 10px;
+text-align: center;
+    width:1060px;
+    font-family: "Architects Daughter";
+    letter-spacing: 0.1em;
+    padding:5px 0 0 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+
 }
+
+#title hr{width:300px;
+text-align:center;}
+
+
 
 ul{list-style-type: none;
 float:left;
@@ -100,14 +69,22 @@ ul li{margin:0 0 5px 0;
 max-width: 500px;
 }
 #ingredients{float:right;
-    width:600px;
+    width:380px;
 padding:5px;
-margin-bottom:10px;
+margin-left:10px;
 text-align: right;}
 
 #ingredients h4{margin-top:0;
 text-align: right;
 text-decoration: underline}
+
+#show_pic{width:1060px;
+    text-align: center;
+margin-bottom: 10px;}
+
+#show_pic img{width:300px;
+    height:auto;
+}
 
 .cl{clear:left}
 .fr{float:right}
@@ -118,27 +95,41 @@ text-decoration: underline}
 top:10px;
 left:10px;}
 
-dt{background-color:#B53560;
-color:white;
-    border-top:1px solid #CCC;
-    border-right:2px solid #CCC;
-    border-bottom:2px solid #CCC;
-    border-left:1px solid #CCC;
-    border-radius:4px 4px 4px 4px;
-width:60px;
-margin-bottom:2px;}
+dl{width:529px;
+    padding-right: 30px;
+    float:left;
+background-image: url('bgmid.png');
+    background-position: right 2px;
+background-repeat: repeat-y;
+}
 
-dd{    border-top:1px solid #B53560;
-    border-right:2px solid #B53560;
-    border-bottom:2px solid #B53560;
-    border-left:1px solid #B53560;
-    border-radius:4px 4px 4px 4px;
-padding:2px;
-margin-bottom:10px;
-margin-left: 2px;}
+dd{
+    margin-left:0;
+    margin-top:5px;
+    margin-bottom:5px;
+
+padding-left: 0;
+color:#333;
+
+
+}
+
+h4, dt{font-family: "Architects Daughter";
+
+text-transform: uppercase;
+    text-decoration: underline;
+font-size: 14px;
+color:#333;
+
+}
 
 #nav a:hover{color:#B53560;
 background-color: white;
 text-decoration: underline}
 
 #nav a{margin-bottom:5px;}
+
+.img_front{width:250px;
+    height:auto;
+margin:5px;
+float:left;}

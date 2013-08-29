@@ -20,7 +20,7 @@ class UsersController < ApplicationController
   end
 
   def welcome
-    @title = "Welcome To RecipeBook"
+    @title = "Welcome"
   end
 
   # GET /users/new

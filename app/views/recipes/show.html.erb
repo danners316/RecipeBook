@@ -1,24 +1,26 @@
+<div id="show_pic"><%= image_tag @recipe.attachment.url %> </div>
 <div id="ingredients">
 
+
   <h4>Ingredients</h4>
-  <span class="font">
-  <%= @recipe.ingredients %>
-   <span>
+
+  <%= simple_format(@recipe.ingredients) %>
+
 </div>
 
 <div class="flcl">
 <dl>
 
   <dt>Step 1</dt>
-  <span class="font"><dd><%= @recipe.method_1 %></dd></span>
+  <dd><%= @recipe.method_1 %></dd>
   <dt>Step 2</dt>
-  <span class="font"><dd><%= @recipe.method_2 %></dd></span>
+  <dd><%= @recipe.method_2 %></dd>
   <dt>Step 3</dt>
-  <span class="font"><dd><%= @recipe.method_3 %></dd></span>
+  <dd><%= @recipe.method_3 %></dd>
   <dt>Step 4</dt>
-  <span class="font"><dd><%= @recipe.method_4 %></dd></span>
+  <dd><%= @recipe.method_4 %></dd>
   <dt>Step 5</dt>
-  <span class="font"><dd><%= @recipe.method_5 %></dd></span>
+  <dd><%= @recipe.method_5 %></dd>
 
 </dl>
 </div>
