@@ -12,6 +12,17 @@
  *= require_tree .
  */
 
+@font-face {
+    font-family: "Architects Daughter";
+    src: url('architectsdaughter-webfont.eot');
+    src: url('architectsdaughter-webfont.eot?#iefix') format('embedded-opentype'),
+    url('architectsdaughter-webfont.woff') format('woff'),
+    url('architectsdaughter-webfont.ttf') format('truetype'),
+    url("architectsdaughter-webfont.svg#Architects Daughter") format('svg');
+
+}
+
+
 #wrapper{width:1060px;
 margin-right: auto;
 margin-left: auto;
